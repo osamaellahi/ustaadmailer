@@ -1,0 +1,104 @@
+<html>
+	<head>
+		<title>Mail</title>
+		<link rel="icon" href="125.jpg" >
+		<style>
+			body{
+				color:white;
+				background:black;
+				font-family:verdana;
+				background-image:url(https://cdn.pixabay.com/photo/2017/02/18/12/36/hacker-2077138_960_720.jpg);
+				background-image:url(https://images.unsplash.com/photo-1521175776577-f8e0c1e5ecb7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=836&q=80);
+				background-repeat:no-repeat;
+			      background-size:100% 100%;
+			}
+			
+			
+.glow {
+  font-size: 120px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+			form{
+				color:white;
+				border-radius:5px;
+				border:5px solid red;
+				width:70%;
+				padding:5% 0% 2% 5%;
+				background:#fffddd4;
+				margin:1% 10% 0% 10%;
+			}
+			#span{
+				margin-left:2px;
+				display:inline-block;
+				width:200px;
+			}
+			input{
+				margin-bottom:2%;
+				border-radius:10px;
+				padding:10px;
+				font-size:large;
+				width:75%;
+				background:#a7dcb490;
+			}
+			input[type=text]
+			{
+				background:#b7b7b7;
+			}
+			input:hover{
+			border:3px solid black;
+			}
+			input:focus
+			{
+				border:2px solid red;
+				background:black;
+				color:white;
+			}
+			input:hover{
+				<!--background:#66bd69;-->
+				background:black;
+				
+			}
+			@media screen and (max-width :1200px)
+			{
+				input{
+					width:90%;
+				}
+			}
+		#head{
+			text-align:center;
+		}
+		</style>
+	</head>
+	<body style="position:relative;">
+		<div id="head">
+			<h1 class="glow" style="color:red;">Ustaad Mailer</h1><hr />
+			<marquee >Warning!!!Dont miss use it.</marquee><hr />
+		</div>
+		<form action="send.php" method="get" >
+			<h2>
+				<div id="span">From</div><input type="text" name="fname" placeholder="Enter Name here will be shown when mail sent..."><br />
+				<div id="span">Subject</div><input type="text" name="subject" placeholder="Enter Subject..."><br />
+				<div id="span">From_mail</div><input type="text" name="from" placeholder="Enter mail here reciver recieve from..."><br />
+				<div id="span">To</div><input type="text" name="to" placeholder="Enter Email here to send to..."><br />
+				<div id="span">File(coming soon)</div><input type="file" name="file" multiple><br />
+				<div id="span">Message </div><input type="text" name="message" placeholder="Enter message here..."><br />
+				<div id="span" class="send"></div><input type="submit" value="..Send.." title="click to send" style="cursor:pointer;float:left;width:90%;font-size:large;margin-top:2%;border-radius:10px; background:aqua;border:4px solid red;"><br />
+			
+			</h2>
+		</form>
+	</body>
+</html>
